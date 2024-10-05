@@ -6,21 +6,28 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: #000; /* Fallback for old browsers */
     background-image: url('background.jpg'); /* Your background image */
-    background-size: cover;
-    background-position: center;
+    background-size: cover; /* Cover the entire screen */
+    background-attachment: fixed; /* Make the background fixed */
+    background-position: center; /* Center the background */
+    color: white; /* Default text color for better visibility */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center; /* Center text */
 }
 
 .message {
-    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
     padding: 25px;
     border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
     max-width: 700px;
     width: 100%;
-    text-align: center;
     animation: fadeIn 1s ease-in-out;
-    color: #ffffff; /* White text for better visibility */
 }
 
 h1 {
@@ -36,7 +43,7 @@ h3 {
 }
 
 p, li {
-    color: #ffffff; /* Ensuring all text is white for contrast */
+    color: #fff; /* Change to white for readability */
     font-size: 18px;
     line-height: 1.6;
     margin: 15px 0;
