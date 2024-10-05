@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.container {
+  height: 150%;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
